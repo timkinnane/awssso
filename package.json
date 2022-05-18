@@ -1,0 +1,42 @@
+{
+  "name": "awssso",
+  "version": "0.0.0",
+  "description": "A NodeJS utility to fetch short-term credentials for AWS SSO profiles and support account switching and legacy connection methods.",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn lint",
+    "test": "jest",
+    "build": "tsup src",
+    "dev": "tsup src --watch --onSuccess 'node dist/index.js'",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/node": "16",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
+    "tsup": "^5.12.7",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.9",
+    "aws-sdk": "^2.1133.0",
+    "cli-spinners": "^2.6.1",
+    "ink": "^3.2.0",
+    "ink-divider": "^3.0.0",
+    "ink-select-input": "^4.2.1",
+    "ink-task-list": "^2.0.0",
+    "react": "^18.1.0"
+  }
+}
