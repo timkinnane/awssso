@@ -7,7 +7,7 @@ Fetch short-term credentials for AWS SSO profiles, with simple account switching
 ## Purpose
 
 Some Node libraries like [Serverless Framework](https://www.serverless.com/) authenticate AWS SSO
-accounts by loading from the Shared Credentials
+accounts by loading from the [Shared Credentials
 File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
 and setting the active profile with environment variables. This is something of a legacy approach
 compared to the AWS CLI which authenticates sessions with a simple `--profile` flag.
